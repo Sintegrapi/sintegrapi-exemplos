@@ -18,10 +18,10 @@ Também temos a documentação oficial da nossa API em: [Sintegra API Documenta�
 
 | Linguagem | Código-fonte                                  |
 |-----------|-----------------------------------------------|
-| Node.js   | [exemplo-node.js](./node/exemplo.js)          |
+| Node.js   | [exemplo-node.js](./nodejs/exemplo.js)          |
 | PHP       | [exemplo-php.php](./php/exemplo.php)          |
-| C#        | [exemplo-csharp.cs](./.NET/csharp/exemplo.cs) |
-| VB.NET    | [exemplo-vbnet.cs](./.NET/VB.NET/exemplo.vb)  |
+| C#        | [exemplo-csharp.cs](./.NET/csharp/Program.cs) |
+| VB.NET    | [exemplo-vbnet.cs](./.NET/VB.NET/Program.vb)  |
 | Python    | [exemplo-python.py](./python/exemplo.py)      |
 | Go        | [exemplo-go.go](./go/exemplo.go)              |
 | Java      | [exemplo-java.java](./java/exemplo.java)      |
