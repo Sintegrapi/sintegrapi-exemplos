@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Chamada API</title>
+</head>
+
+<body>
+
+    <h1>Exemplo de Chamada à API Sintegrapi</h1>
+
+    <button id="callApiBtn">Consultar API</button>
+
+    <pre id="responseOutput"></pre>
+
+    <script>
+        // Função para chamar a API e exibir o resultado
+        document.getElementById('callApiBtn').addEventListener('click', function () {
+            const apiKey = 'SUA_API_KEY';  // Substitua pela sua chave da API
+            const cnpj = '15436940000103';  // CNPJ de exemplo
+
+            // URL da API
+            const url = `https://api.sintegrapi.com.br/consultas/sintegra/${cnpj}`;
+
+            // Fazendo a requisição usando fetch
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'x-api-key': apiKey  // Adicionando o header com a chave da API
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP: ${response.status}`);
+                    }
+                    return response.json();  // Converter resposta para JSON
+                })
+                .then(data => {
+                    // Exibindo a resposta no navegador
+                    document.getElementById('responseOutput').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    // Exibindo erro caso algo aconteça
+                    document.getElementById('responseOutput').textContent = `Erro: ${error.message}`;
+                });
+        });
+    </script>
+
+</body>
+
+</html>
