@@ -9,7 +9,7 @@ class Program
         using var client = new HttpClient();
         client.DefaultRequestHeaders.Add("x-api-key", "SUA_API_KEY");
 
-        var response = await client.GetAsync("https://api.sintegrapi.com.br/consultas/sintegra/15436940000103");
+        var response = await client.GetAsync("https://api.sintegrapi.com.br/consultas/v2/sintegra/15436940000103");
         string result = await response.Content.ReadAsStringAsync();
 
         Console.WriteLine(result);
