@@ -57,7 +57,7 @@ curl --request GET \
 ## 📢 Contribuições
 Fique à vontade para abrir issues e enviar pull requests com melhorias ou novos exemplos!
 
-📧 Contato: suporte@sintegrapi.com.br
+📧 Contato: contato@sintegrapi.com.br
 🌍 Site Oficial: https://sintegrapi.com.br
 
 
