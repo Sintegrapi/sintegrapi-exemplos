@@ -8,7 +8,7 @@ Module Program
 
     Public Async Function Execute() As Task
 
-        Dim apiUrl As String = "https://api.sintegrapi.com.br/consultas/sintegra/15436940000103"
+        Dim apiUrl As String = "https://api.sintegrapi.com.br/consultas/v2/sintegra/15436940000103"
         Dim apiKey As String = "SUA_API_KEY" 'ADICIONE AQUI SUA CHAVE DE API
         Using client As New HttpClient()
 
@@ -25,7 +25,7 @@ Module Program
                     Console.WriteLine("Erro ao consultar API. Status Code: " & response.StatusCode)
                 End If
             Catch ex As Exception
-                Console.WriteLine("Erro ao fazer a requisição: " & ex.Message)
+                Console.WriteLine("Erro ao fazer a requisiÃ§Ã£o: " & ex.Message)
             End Try
         End Using
     End Function
